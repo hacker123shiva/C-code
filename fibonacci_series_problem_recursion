@@ -1,1 +1,23 @@
+ #include<stdio.h>
+ 
+ int fibo(int n);
+ int main()
+ {int n;
+ printf("Enter value of n for finding fibonacci sequence:");
+ 
+ scanf("%d",&n);
+ for (int i=1;i<=n;i++)
+   {
+   printf("%d\t",fibo(i));
+ 
+     
+   }
+ }
+ 
+ int fibo(int n)
+ {
+     if(n==1||n==2)
+      return n-1;
+     return fibo(n-1)+fibo(n-2);
+ }
 
